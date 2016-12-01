@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.addEventListener("load",EventWindowLoaded,false);
+
+		function EventWindowLoaded(){
+			canvasApp();
+		}
+
+		function canvasApp(){
+			
+			var canvas=document.getElementById("miCanvas");
+			var context=canvas.getContext("2d");
+			var letras= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+			var hoy=new Date();
+			var letraAdivinar="";
+			var letrasUtilizadas;
+			var finDelJuego=false;
+
+			function iniciarJuego(){
+				var letraIndice= Math.floor(Math.random()*letras.length);
+				letraAdivinar=letras[letraIndice];
+				veces=0;
+				letrasUtilizadas=[];
+
+				window.addEventListener("keydown",eventKeyPressed,false);
+				dibujarPantalla();
+				console.log(letras[letraIndice]);
+				//var indiceLetra=letras.indexOf(letraAdivinar);
+
+				function eventKeyPressed(e){
+					if(!finDelJuego){
+						var letraPresionada = String.fromCharCode(e.keyCode);
+						letraPresionada = letraPresionada.toLowerCase();
+						veces--;
+						letrasUtilizadas.push(letraPresionada);
+						
+						if(letraPresionada==letraAdivinar){
+							finDelJuego=true;
+						}else{
+							var indicePresionada=letras.indexOf(letraPresionada);
+							if(letraPresionada<0){
+								mensaje="No es una letra";
+							}else if(indicePresionada=letraIndice){
+								mensaje="La letra esta más abajo";
+							}else{
+								mensaje="La letra esta más arriba";
+							}
+						}
+						dibujarPantalla();
+					}
+				}
+			}
+			function dibujarPantalla(){
+				context.fillStyle="#fffaaa";
+				context.fillRect(0,0,canvas.width, canvas.height);
+
+				//tezt
+				context.fillStyle = "#000000";
+				context.font = "20px Sans-Serif";
+				context.baseline="top";
+
+				context.fillStyle="#000000";
+				context.font="16px Sans-Serif";
+				context.fillText(hoy, 150,10);
+
+				//veces
+				context.fillStyle = "#109910";
+				context.font = "16px Sans-Serif";
+				context.fillStyle();
+
+			}
+
+			dibujarPantalla();
+		}
+
+	</script>
+</head>
+<body>
+	<canvas id="miCanvas" height="500" width="500">
+		GG No soportas canvas
+	</canvas>
+</body>
+</html>

@@ -1,0 +1,15 @@
+p{
+
+	color: red;
+	font-size: 22pt
+}
+
+div p{
+	color: blue;
+	font-size: 13pt;
+}
+
+div div p{
+	color: green;
+	font-size: 13pt;
+}

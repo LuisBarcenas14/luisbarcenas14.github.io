@@ -1,0 +1,208 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Roboto:300,400,700i';
+
+*{
+	/*font-style: italic;*/
+	font-family: 'Roboto', courier;
+}
+
+body{
+	margin: 0 auto;
+	/*padding: 50px;*/
+	/*background-color:  #ebf0f3;*/
+	background: #FFFAF0;
+}
+
+header{
+	/*background-color: #2ecc71;*/
+	padding-right: 10px;
+	background: rgba(32,124,229,1);
+background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(78%, rgba(73,155,234,0.88)), color-stop(100%, rgba(73,155,234,0.85)));
+background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea', GradientType=0 );	
+}
+header div{
+	display: inline;	
+	/*padding-top: 20px;
+	padding-right: 20px;*/
+}
+
+nav{
+	background-color: #2ecc71;
+	height: 25px;
+	background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(78%, rgba(73,155,234,0.88)), color-stop(100%, rgba(73,155,234,0.85)));
+background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea', GradientType=0 );	
+
+}
+section nav a{
+	display: inline;
+	margin-left: 5px;
+}
+#barra{
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	text-align: center;
+}
+
+#barra a{
+	text-decoration-style: none;
+	color: white;
+}
+
+#principal{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
+
+#principal>div{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	/*display: inline;*/
+	/*border: 2px solid yellow;*/
+}
+
+#izq{
+	width: 15%;
+	/*border: 2px solid red;*/
+	float: left;
+	/*background-color: #f4c634;*/
+	/*box-shadow: 0px 27px 115px -13px rgba(0,0,0,0.6);*/
+	background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(78%, rgba(73,155,234,0.88)), color-stop(100%, rgba(73,155,234,0.85)));
+background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea', GradientType=0 );	
+
+}
+#izq p{
+	/*float: left;*/
+	margin-left: 10px;
+	margin-top: 5px;
+	display: block;
+	color: blue;
+}
+#izq a{
+	/*float: left;*/
+	margin-left: 10px;
+	display: block;
+	color: white;
+}
+
+#centro{
+	/*height: 600px;*/
+	width: 98%; /*Antes 55*/
+	float: left;
+	padding: 0px;
+}
+
+#centro>div{
+	display: inline-block;
+}
+
+footer{
+	height: 3em;
+	padding: 1em; 
+	text-align: center;
+	font-weight: bold;
+	/*background-color: #2ecc71;*/
+	background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(78%, rgba(73,155,234,0.88)), color-stop(100%, rgba(73,155,234,0.85)));
+background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(73,155,234,0.88) 78%, rgba(73,155,234,0.85) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea', GradientType=0 );	
+
+}
+
+footer p{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.limpiar{
+	clear:both; margin-top: 20px;
+}
+
+.imagen{
+	float: left;
+	width: 121px;
+}
+
+.imagen2{
+	float: left;
+	height: 101px;
+}
+
+#centro>div{
+	display: block;
+}
+
+#Mario{
+    background-image: url("img/mario-stage.gif");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    /*background-attachment: fixed;*/
+}
+
+#Sonic{
+    background-image: url("img/green-hill.png");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    background-color: white;
+    color: white;
+    background-position: 0% 80%;
+    /*background-attachment: fixed;*/
+}
+
+#Megaman{
+    background-image: url("img/megaman-back2.png");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    background-color: white;
+    color: white;
+    background-position: 10% 60%;
+    /*background-attachment: fixed;*/
+}
+
+#Pacman{
+    background-image: url("img/pacman-background.jpg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    background-color: white;
+    color: white;
+    background-position: 0% 35%;
+    /*background-attachment: fixed;*/
+}
+
+#titulo{
+	max-width: 80%;
+	float: left;
+}
+
+#buscar{
+	width: 20%;
+	float: right;
+	margin-top: 2%;
+}

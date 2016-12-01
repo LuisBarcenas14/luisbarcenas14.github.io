@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bandera de M&eacute;xico</title>
+	<style>
+
+		body{
+			margin: 0 auto;
+		}
+		#contenedor{
+			width: 100%;
+			height: 60%;
+			border: 1px solid black;
+			display: inline-block;
+			/*margin: 20px;*/
+		}
+		#izq{
+			float: left;
+			width: 32%;
+			height: 480px;
+			background-color: green;
+		}
+		#med{
+			float: left;
+			width: 32%;
+			height: 480px;
+			background-color: white;
+		}
+		#der{
+			float: right;
+			width: 32%;
+			height: 480px;
+			background-color: red;
+		}
+		#contenedor div{
+			/*display: block;*/
+			border: 1px solid black;
+		}
+
+		#imagen{
+			width: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="izq"></div>
+		<div id="med">
+			<img style="display: inline;" src="img/escudo-mexico.png" alt="Bandera de México" id="imagen">
+		</div>
+		<div id="der"></div>
+	</div>
+</body>
+</html>

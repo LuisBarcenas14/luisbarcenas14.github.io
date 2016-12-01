@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tarea JQuery</title>
+	<!--Tambien se puede descargar el archivo y usarlo de forma local-->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>	
+	<script type="text/javascript">
+		//preguntamos si el documento ya esta cargado
+		$(document).ready(function (){
+			console.log("Documento cargado");
+			imagenes=[];
+			var target=$("#cont");
+			for(i=1;i<=19;i++){
+				//imagenes.push(new Image());
+				var s="sprites/Tails/Remolino/Tails_Remolino_"+i+".png";
+				target.append('<img class="imagen" src="'+s+'"></img>');
+			}
+		});
+	</script>
+	<style type="text/css">
+		#cont{
+			width: 100%;
+		}
+
+		.imagen{
+			display: inline-block;
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="cont"></div>
+</body>
+</html>

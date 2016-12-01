@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#contenedor{
+			background-color: blue;
+			padding: 10px;
+			min-height: 400px;
+			margin-top: 20px;
+		}
+		#contenedor div{
+			background-color: green;
+			margin: 10px 0px 10px;
+			color: white;
+			display: inline-block;
+			min-width: 80px;
+			min-height: 80px;
+			padding: 10px;
+			text-align: center;
+			border: solid 5px black;
+		}
+		#a{
+			float: right;
+		}
+		#c{
+			float: left;
+		}
+		#d{
+			width: 400px;
+			height: 400px;
+		}
+		/*
+		#primero{
+			position: relative;
+			top: 8em;
+			left: 5em;
+		}
+		#segundo{
+			position: absolute;
+			top: 24em;
+			right: 2em;
+		}
+		#cuarto{
+			position: fixed;
+			bottom: 5em;
+		}
+		*/
+	</style>
+</head>
+<body>
+	<section id="contenedor">
+		<div id="primero">
+			1
+		</div>
+		<div id="segundo">
+			2 ya me voy
+		</div>
+		<div id="tercero">
+			3 Yo ocupo su llugar yupi!
+		</div>
+		<div id="cuarto">
+			4 NO estoy fijo en la pantalla
+		</div>
+	</section>
+
+	<section id="contenedor">
+		<div id="a">flote y ya no soy parte del flujo xD</div>
+		<div id="b">2</div>
+		<div id="c">3 yo no voy aqui</div>
+		<div id="d">
+			<img src="img/logo cepc.jpg" alt="CEPC" width="150px" style="float: left">
+			<p>Quisiera que el texto fluyera sobre la imagen.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sint illum corporis nisi illo fuga voluptatum sunt, nobis molestias id optio ea neque, rerum quas! Aliquam ipsam harum expedita officiis.</p>
+		</div>
+		<div></div>
+	</section>
+	 <section id="contenedor" style="height:auto;">
+		 <img src="img/cepc.png" alt="CEPC" width="300px" style="float:left;">
+		 <div id="I" > 
+		  <p>Como la imagen esta flotada </p>
+		 
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur minima, reiciendis beatae id unde officiis velit. Accusamus eum nostrum quasi veritatis, repellendus perspiciatis explicabo aliquid reprehenderit ut maiores ea iusto?</p>
+		  <p>Si queremos que la siguiente caja se ponga hasta abajo de la imagen debemos limpiar esa area</p>
+		 </div>
+		 <div id="II">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ducimus delectus libero pariatur! Sit consectetur, rem ut dolores, distinctio nam modi, eligendi aperiam dignissimos omnis totam ratione minima dolor sapiente.</p>
+		  <p>AREA LIMPIA :D</p>
+		  <p>Uy pero el contenedor no lo agarro :( pues vamos a forzarlo :D</p>
+
+		 </div>
+
+	</section>
+	<section style="clear:both; margin-top: 20px;"></section>
+	 <section style="background-color: black;">
+	 	<div style="background-color: black; float: left ; width: 30px; height: 50px; color: white; border: solid 10px purple; display: inline;">Hola</div>
+	 	<div style="background-color: black; float: right; width: 30px; height: 50px; color: white; border: solid 10px purple; display: inline;">Hola</div>
+	 	<div style="clear: both;"></div>
+	 </section>	  
+</body>
+</html>

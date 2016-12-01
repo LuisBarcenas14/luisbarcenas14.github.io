@@ -1,0 +1,62 @@
+#titulo{
+	color: #000099;
+}
+
+#subtitulo{
+	color: #0000FF;
+
+}
+
+strong{
+	color: #FF0000;	
+}
+
+.destacado{
+	color: yellow;
+}
+
+.especial{
+	color: violet;
+}
+
+.especial{
+	color: violet;
+}
+
+a{
+	color: red;
+}
+
+em{
+	color: blue;
+}
+
+table caption{
+	color: blue;
+}
+
+table thead{
+	color: yellow;
+}
+
+table td{
+	color: green;
+	border: 1px solid;
+}
+
+
+table{
+	border: 1px solid;
+}
+
+.fila{
+	color: red;
+}
+
+#adicional p{
+	color: #006600;
+}
+
+#adicional a{
+	color: #00FF00;
+}

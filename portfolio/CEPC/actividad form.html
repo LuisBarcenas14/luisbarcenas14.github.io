@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<style>
+
+		*{ margin: 0 auto; }
+		body{ 
+			padding-left: 50px; 
+			padding-right: 50px;
+		}
+		header{ 
+			text-align: left; 
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid black;
+		}
+		.parte{
+			/*background-color: lightgray;*/
+			transition: background 2s;
+			border-bottom: 1px solid black;
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+		}
+		.parte:hover{
+			background-color: #ffffcc;
+		}
+		.izq{
+			margin: 0 auto;
+			float: left;
+			width: 20%;
+			text-align: right;
+			font: 16px;
+			font-weight: bold;
+		}
+		.med{
+			margin-left: 10px;
+			float: left;
+		}
+		.cont{
+			display: block;
+			text-align: left;
+			margin-bottom: 10px;
+			font: 12px bold;
+		}
+		.med2{
+		}
+		.med2 .cont{
+			margin-right: 50px;
+			display: inline-block;
+		}
+		input{
+			border: 0px;
+			border-bottom:  2px solid black;
+			transition: border 1s;
+		}
+		.cont input:hover{
+			border: 1px solid black;
+			border-color: #FF0000;
+		}
+		.limpiar{
+			clear:both; margin-top: 10px;
+		}
+		.btn{
+			float: right;
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="get">
+		<header>
+			<h1>Formulario de Registro</h1>
+		</header>
+		<div class="parte">
+			<div class="izq">
+				<p>Nombres y Apellidos</p>
+			</div>
+			<div class="med">
+				<div class="cont">
+					<input type="text"><p>Nombre</p>
+				</div>
+				<div class="cont">
+					<input type="text"><p>Primer Apellido</p>
+				</div>
+				<div class="cont">
+					<input type="text"><p>Segundo Apellido</p>
+				</div>
+			</div>
+			<section class="limpiar"></section>
+		</div>
+		<div class="parte">
+			<div class="izq">
+				<p>Direcci&oacute;n</p>
+			</div>
+			<div class="med">
+				<div class="cont">
+					<input type="text"><p>Calle, n&acute;mero, piso, puerta</p>
+				</div>
+				<div class="med2">
+					<div class="cont">
+						<input type="text"><p>C&oacute;digo Postal</p>
+					</div>
+					<div class="cont">
+						<input type="text"><p>Municipio</p>
+					</div>
+				</div>
+				<div class=med2>
+					<div class="cont">
+						<input type="text"><p>Provincia</p>
+					</div>
+					<div class="cont">
+						<input type="text"><p>Pa&iacute;s</p>
+					</div>
+				</div>
+			</div>
+			<section class="limpiar"></section>
+		</div>
+		<div class="parte">
+			<div class="izq">
+				<p>Email</p>
+			</div>
+			<div class="med">
+				<div class="cont">
+					<input type="email">
+				</div>
+			</div>
+			<section class="limpiar"></section>
+		</div>
+		<div class="parte">
+			<div class="izq">
+				<p>Tel&eacute;fono</p>
+			</div>
+			<div class="med">
+				<div class=med2>
+					<div class="cont">
+						<input type="text"><p>Fijo</p>
+					</div>
+					<div class="cont">
+						<input type="text"><p>M&oacute;vil</p>
+					</div>
+				</div>
+			</div>
+			<section class="limpiar"></section>
+		</div>
+		<div class="parte">
+			<div class="btn">
+				<button type="button">Registrarse</button>
+			</div>
+			<section class="limpiar"></section>
+		</div>
+	</form>
+</body>
+</html>

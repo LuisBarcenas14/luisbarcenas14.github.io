@@ -1,0 +1,74 @@
+body {
+  font-family: Helvetica;
+  padding: 2em;
+  background-color: whitesmoke;
+}
+
+/*
+canvas{
+  width: 10em;
+}
+*/
+h1 {
+  font-size: 2.5em;
+}
+
+.skillset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header{
+  background-color: lightgray;
+  text-align: center;
+}
+
+.skill-1 {
+  background-color: #E55126;
+}
+
+.skill-2 {
+  background-color: #E5A227;
+}
+
+.skill-3 {
+  background-color: #0C73B8;
+}
+
+
+
+
+footer{
+  background-color: lightgray;
+  text-align: center;
+}
+
+.skill{
+  width: 100%;
+  padding: 1em 3em 2em 2em;
+  margin: 0.5em;
+  color: whitesmoke;
+}
+
+.projects-button {
+  padding: 0.75em 1.25em;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  width: 10em;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects {
+  margin: 1em 0;
+}
+
+.active {
+  background-color: #333333;
+  color: whitesmoke;
+}

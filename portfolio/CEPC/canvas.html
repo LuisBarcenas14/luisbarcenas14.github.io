@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi primera aplicaci&oacute;n con Canvas</title>
+	<link rel="stylesheet" href="canvas.css">
+	<script type="text/javascript">
+		window.addEventListener("load",eventWindowLoaded,false);
+
+		function eventWindowLoaded(){
+			canvasApp();
+		}
+
+		function canvasApp(){
+			var canvas = document.getElementById("miCanvas");
+			var context = canvas.getContext("2d");
+
+			function dibujarPantalla(){
+				//background
+				context.fillStyle="#fffaaa";
+				context.fillRect(0,0,canvas.width, canvas.height);
+
+				//tezt
+				context.fillStyle = "#000000";
+				context.font = "20px Sans-Serif";
+				context.baseline="top";
+				context.fillText("Hola CEPC", 195,80);
+
+				//image
+				var imagen = new Image();
+				imagen.onload=function(){
+					context.drawImage(imagen,155,110);
+				}
+				imagen.src="wimg/emh.png";
+
+				//box
+				context.strokeStyle="#000000";
+				context.strokeRect(0,0,canvas.width,canvas.height);
+
+			}
+			dibujarPantalla();
+		}
+
+		
+	</script>
+</head>
+<body>
+	<canvas id="miCanvas" height="500" width="500">
+		Lo siento tu navegador no soporta CANVAS
+	</canvas>
+
+</body>
+</html>

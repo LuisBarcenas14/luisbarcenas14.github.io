@@ -1,0 +1,112 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Roboto:300,400,700i';
+
+*{
+	/*font-style: italic;*/
+	font-family: 'Roboto', courier;
+}
+
+body{
+	margin: 0 auto;
+	/*padding: 50px;*/
+	background-color:  #ebf0f3;
+}
+
+header{
+	background-color: #2ecc71;
+	border: 5px solid orange;
+}
+header div{
+	display: inline;	
+	/*padding-top: 20px;
+	padding-right: 20px;*/
+}
+
+nav{
+	background-color: #2ecc71;
+	height: 25px;
+}
+section nav a{
+	display: inline;
+	margin-left: 5px;
+}
+#barra{
+	background-color: orange;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#principal{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#principal>div{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	/*display: inline;*/
+	/*border: 2px solid yellow;*/
+}
+
+#izq{
+	height: 600px;
+	width: 15%;
+	/*border: 2px solid red;*/
+	float: left;
+	background-color: #f4c634;
+	box-shadow: 0px 27px 115px -13px rgba(0,0,0,0.6);
+}
+#izq p{
+	/*float: left;*/
+	margin-left: 10px;
+	margin-top: 5px;
+	display: block;
+	color: blue;
+}
+#izq a{
+	/*float: left;*/
+	margin-left: 10px;
+	display: block;
+	color: white;
+}
+
+#centro{
+	height: 600px;
+	width: 55%;
+	float: left;
+}
+
+#der{
+	height: 600px;
+	width:  25%;
+	float: left;
+	background-color: #f4c634;
+	box-shadow: 0px 27px 115px -13px rgba(0,0,0,0.6);
+	padding: 10px;
+}
+
+#centro>div{
+	display: inline;
+}
+
+
+footer{
+	margin-top: 10px;
+	text-align: center;
+	background-color: #2ecc71;
+	border: 5px solid orange;
+}
+
+footer p{
+	font-size: 14px;
+}
+
+.limpiar{
+	clear:both; margin-top: 20px;
+}
+
+.imagen{
+	float: left;
+}

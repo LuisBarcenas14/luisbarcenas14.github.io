@@ -1,0 +1,120 @@
+*{ margin: 0; }
+
+.navbar ul{
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar ul li{ 
+	display: inline-block; 
+	padding: 14px 16px; 
+	font-size: 17px;
+	transition: 0.3s;
+	float: left;
+}
+
+.navbar ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar li:hover{
+	background-color: #555;
+}
+
+header{
+	text-align: center;
+	padding: 5em;
+	background-color: #16a085;
+}
+
+header >h1{
+	font-family: 'Lobster Two',cursive;
+	font-size: 56px;
+	color: #f1c40f;
+}
+
+p{ font-family: 'Open Sans', sans-serif; }
+h2{ font-family: 'Lobster Two', cursive; }
+
+.container{ padding: 5% 5%; }
+
+.container section{
+	display: inline-block;
+	float: left;
+	width: 32.33%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: justify;
+	margin: 0 5px;
+}
+
+.container-img{ text-align: center; }
+.container-img img{ height: 7em; }
+.container section> img{  }
+.container section >h2{ text-align: center; }
+
+.col{
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+}
+
+footer{ text-align: center; display: block; width: 100%; } 
+
+.colores{
+	width: 99%;
+	/*margin: -1px;*/ 
+	padding: 0 auto;
+}
+
+.colores div{ width: 25%;  color: white; display: inline-block; height: 5em; float: left;}
+
+.red{ background-color: red; }
+.blue{ background-color: blue; }
+.green{ background-color: green; }
+.yellow{ background-color: yellow; }
+
+
+@media screen and (max-width: 1110px){
+	.navbar ul li{
+		float:  none;
+		display: block;
+		text-align: center;
+		padding: 7px 6px;
+	}
+	header > h1{
+		font-size: 50px;
+		color: #c0392b;
+	}
+	header{ padding: 2em; }
+	.container section{
+		width: 48%;
+		display: block;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 680px){
+	.navbar ul li{
+		float:  none;
+		display: block;
+		text-align: center;
+		padding: 7px 6px;
+	}
+	header > h1{
+		font-size: 48px;
+		color: #c0392b;
+
+	}
+	header{ padding: 2em; }
+	.container section{
+		width: 99%;
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	
+}

@@ -1,0 +1,22 @@
+*{
+	background-color: #d3ffce;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#header{
+	background-color:  #2a8539;
+}
+
+td{
+	text-align: center;
+	background-color: white;
+}
+
+table{
+	background-color: white;
+}
+
+footer{
+	text-align: center;
+}
